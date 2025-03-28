@@ -1,76 +1,58 @@
-\documentclass[12pt]{article}
-\usepackage[margin=1in]{geometry}
-\usepackage{hyperref}
-\usepackage{graphicx}
+# 📍 Spatial Data and Mapping Exam
 
-\title{README - Spatial Data and Mapping Exam}
-\author{Anahí Reyes Miguel}
-\date{\today}
+**Author**: Anahí Reyes Miguel  
+**Email**: anahi.reyes-miguel@polytechnique.edu  
+**Date**: March 2025
 
-\begin{document}
+## 📝 Overview
 
-\maketitle
+This project analyzes spatial data from San Francisco using R. It focuses on visualizing and combining data related to:
 
-\section*{📍 Overview}
+- Neighborhood boundaries
+- Cultural districts
+- Demographic indicators
+- Business types
 
-This project aims to analyze spatial data from San Francisco using R. The focus is on neighborhood boundaries, cultural districts, demographic attributes, and business distributions. The analysis includes geospatial joins, data visualization, and exploratory spatial analysis using \texttt{sf}, \texttt{ggplot2}, and \texttt{dplyr} packages.
+The goal is to explore spatial relationships and trends using geographic data and geovisualization tools.
 
-\section*{📂 Folder Structure}
-
-\begin{verbatim}
-├── Spatial data and mapping.Rmd   # Main analysis script
+## 📁 Folder Structure
+├── Spatial data and mapping.Rmd       # Main analysis script (R Markdown)
 ├── data/
-│   ├── sfnh.geojson               # Neighborhood boundaries
-│   ├── cultural_district.geojson # Cultural districts
-│   ├── sfnh_dem.csv              # Demographic attributes
-│   ├── sfbiz_by_type.csv         # Business data
-\end{verbatim}
+│   ├── sfnh.geojson                   # Neighborhood boundaries
+│   ├── cultural_district.geojson     # Cultural districts
+│   ├── sfnh_dem.csv                  # Demographic data by neighborhood
+│   ├── sfbiz_by_type.csv             # Business distribution
 
-\section*{🧰 Dependencies}
+## 📦 Dependencies
 
-The following R packages are required to run this project:
+This project uses the following R packages:
 
-\begin{itemize}
-  \item \texttt{sf}
-  \item \texttt{ggplot2}
-  \item \texttt{dplyr}
-  \item \texttt{here}
-  \item \texttt{tibble}
-  \item \texttt{tidyr}
-  \item \texttt{knitr}
-\end{itemize}
+- `sf`
+- `ggplot2`
+- `dplyr`
+- `here`
+- `tibble`
+- `tidyr`
+- `knitr`
 
 You can install them with:
 
-\begin{verbatim}
+```r
 install.packages(c("sf", "ggplot2", "dplyr", "here", "tibble", "tidyr", "knitr"))
-\end{verbatim}
 
-\section*{📊 Data Sources}
+🚀 How to Run
+	1.	Clone the repository and open the project in RStudio.
+	2.	Open Spatial data and mapping.Rmd.
+	3.	Knit to PDF or run each chunk interactively.
+	4.	Make sure all datasets are stored in a folder called /data.
 
-The datasets include:
-\begin{itemize}
-  \item San Francisco neighborhood polygons
-  \item Cultural district boundaries
-  \item Demographic data by neighborhood
-  \item Types and locations of businesses
-\end{itemize}
+🧠 Notes
+	•	The script uses here::here() to manage file paths.
+	•	To knit to PDF, you will need a LaTeX distribution such as TinyTeX.
+	•	All maps and visualizations are generated using ggplot2 and sf.
 
-All datasets are located in the \texttt{/data} folder.
+📬 Contact
 
-\section*{▶️ How to Run}
+If you have any questions, feel free to contact me at:
+📧 anahi.reyes-miguel@polytechnique.edu
 
-\begin{enumerate}
-  \item Open \texttt{Spatial data and mapping.Rmd} in RStudio.
-  \item Use the \texttt{Knit} button to render the PDF, or run the chunks manually.
-  \item Ensure all data files are correctly placed in the \texttt{data} directory.
-\end{enumerate}
-
-\textbf{Note:} To export to PDF, you need a \LaTeX{} distribution installed (e.g., \texttt{TinyTeX} or \texttt{TeX Live}).
-
-\section*{📌 Author}
-
-Anahí Reyes Miguel \\
-\texttt{anahi.reyes-miguel@polytechnique.edu}
-
-\end{document}
