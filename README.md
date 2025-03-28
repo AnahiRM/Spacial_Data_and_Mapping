@@ -16,12 +16,31 @@ This project analyzes spatial data from San Francisco using R. It focuses on vis
 The goal is to explore spatial relationships and trends using geographic data and geovisualization tools.
 
 ## 📁 Folder Structure
-├── Spatial data and mapping.Rmd       # Main analysis script (R Markdown)
-├── data/
-│   ├── sfnh.geojson                   # Neighborhood boundaries
-│   ├── cultural_district.geojson     # Cultural districts
-│   ├── sfnh_dem.csv                  # Demographic data by neighborhood
-│   ├── sfbiz_by_type.csv             # Business distribution
+
+## 📁 Folder Structure
+
+| Path                                | Description                                       |
+|-------------------------------------|---------------------------------------------------|
+| `.Rhistory`                         | R session history (optional)                     |
+| `.Rproj.user/`                      | R project metadata                               |
+| `.git/`                             | Git version control directory                    |
+| `.gitignore`                        | Specifies intentionally untracked files to ignore|
+| `LICENSE`                           | Project license                                  |
+| `README.md`                         | Project overview and usage instructions          |
+| `Spatial data and mapping.Rmd`      | Main analysis script (R Markdown)                |
+| `Spatial data and mapping.Rproj`    | R project configuration file                     |
+| `Spatial-data-and-mapping.pdf`      | Rendered PDF output from R Markdown              |
+| `data/`                             | Raw data folder                                  |
+| ├── `cultural_district.geojson`     | Cultural districts shapefile                     |
+| ├── `sfnh.geojson`                  | Neighborhood boundaries                          |
+| └── `sfnh_dem.csv`                  | Demographic data by neighborhood                 |
+| `processed-data/`                   | Processed and cleaned data                       |
+| └── `sfbiz_by_type.csv`             | Business distribution by type                    |
+| `output/`                           | Visualizations and mapping results               |
+| ├── `class_map.png`                 | Map showing business class clusters              |
+| ├── `combined_plot.png`            | Combined visualization of selected variables     |
+| ├── `map_racial_typology.png`      | Map showing racial typology by neighborhood      |
+| └── `prop_map.png`                  | Map showing proportion of selected demographic   |
 
 ## 📦 Dependencies
 
